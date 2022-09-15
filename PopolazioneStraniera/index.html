@@ -1,87 +1,112 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CAMPOSAMPIERESE DATAVIZ</title>
-    <link rel="stylesheet" href="style/styling.css" />
+    <title>Popolazione Straniera</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#00009C" />
+    <meta
+      name="description"
+      content="Popolazione Straniera residente nei comuni del Camposampierese"
+    />
+    <meta property="og:title" content="Popolazione Straniera Residente" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://officinedigitali.fcc.veneto.it/PopolazioneStraniera/"
+    />
+    <meta
+      property="og:image"
+      content="https://officinedigitali.fcc.veneto.it/PopolazioneStraniera/logo512.png"
+    />
+    <meta
+      property="og:description"
+      content="Data Visualization riguardante la popolazione straniera residente nei comuni del Camposampierese"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:site"
+      content="https://officinedigitali.fcc.veneto.it/PopolazioneStraniera/"
+    />
+    <meta
+      name="twitter:title"
+      content="Dataviz popolazione straniera residente"
+    />
+    <meta
+      name="twitter:description"
+      content="Data Visualization popolazione straniera residente nei comuni del Camposampierese"
+    />
+    <meta
+      name="twitter:image"
+      content="https://officinedigitali.fcc.veneto.it/PopolazioneStraniera/logo512.png"
+    />
+
+    <link rel="stylesheet" href="style/styling.css" />
   </head>
-  <script type="text/javascript" src="libraries/d3.js"></script>
-  <script type="text/javascript" src="libraries/linechart.js"></script>
 
   <body>
-    <div class="section1">
-      <div class="section1-container">
-        <img src="Union.svg" width="66" height="84" />
-        <h1>Federazione dei Comuni del Camposampierese</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur con una dmap unadipiscing
-          elit. In elementum, lectus id hendrerit tristique, risus augue rhoncus
-          ante, ac posuere arcu metus nec turpis.
-        </p>
+    <header>
+      <div class="first">
+        <div class="sections">
+          <div class="second">
+            <div
+              class="header-title"
+              style="text-decoration-color: #00009c; cursor: default"
+              ;
+            >
+              <h2>Popolazione Straniera</h2>
+            </div>
+          </div>
+          <img src="Union.svg" class="logo" />
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="viz-section1">
+        <div class="viz-section1-wrapper">
+          <h3>
+            Residenti stranieri provenienti dalle sei nazioni più rappresentate
+            per ogni comune del Camposampierese
+          </h3>
+
+          <div id="buttons-container"></div>
+        </div>
+      </div>
+
+      <div class="viz-section2">
+        <div id="viz-container">
+          <div class="ui-elements">
+            <button id="change-view" class="button-rects">
+              Totale Stranieri
+            </button>
+            <select id="select-anno"></select>
+          </div>
+          <div id="select-container"></div>
+          <div id="svg-container"></div>
+        </div>
       </div>
     </div>
-    <div class="section2">
-      <div class="landing-buttons-container">
-        <div class="landing-button">
-          <div class="button-container">
-            <div class="button-text">
-              <p class="button-title-link">
-                <a href="linechart.html"> Popolazione</a>
-              </p>
-              <p class="button-p">
-                Lorem ipsum dolor sit amet, consectetur con una dmap
-                unadipiscing elit.
-              </p>
-            </div>
-            <img
-              class="button-image"
-              src="Group5493.svg"
-              width="66"
-              height="84"
-            />
-          </div>
-        </div>
-
-        <div class="landing-button">
-          <div class="button-container">
-            <div class="button-text">
-              <p class="button-title-link">
-                <a href="barchart.html"> Bilancio Demografico</a>
-              </p>
-              <p class="button-p">
-                Lorem ipsum dolor sit amet, consectetur con una dmap
-                unadipiscing elit.
-              </p>
-            </div>
-            <img
-              class="button-image"
-              src="Group5493.svg"
-              width="66"
-              height="84"
-            />
-          </div>
-        </div>
-        <div class="landing-button">
-          <div class="button-container">
-            <div class="button-text">
-              <p class="button-title-link">
-                <a href="treechart.html"> Popolazione Straniera</a>
-              </p>
-              <p class="button-p">
-                Lorem ipsum dolor sit amet, consectetur con una dmap
-                unadipiscing elit.
-              </p>
-            </div>
-
-            <img
-              class="button-image"
-              src="Group5493.svg"
-              width="66"
-              height="84"
-            />
-          </div>
-        </div>
-      </div>
+    <div id="logos">
+      <img src="./footer/federazione-long.svg" />
+      <img src="./footer/officine.svg" />
+      <img src="./footer/por.svg" />
+      <img src="./footer/psc.svg" />
+    </div>
+    <div class="informativa">
+      <a
+        style="text-decoration: underline; font-family: Graphik"
+        href="informativa-stranieri.html"
+      />Informativa privacy
     </div>
   </body>
 </html>
+<script type="text/javascript" src="libraries/d3.js"></script>
+<script type="text/javascript" src="data/treechart-data.js"></script>
+<script type="text/javascript" src="data/linechart-data.js"></script>
+<script type="text/javascript" src="data/stacked-data.js"></script>
+<script type="text/javascript" src="data/wider-data.js"></script>
+<script type="text/javascript" src="data/stacked-data-area.js"></script>
+<script type="text/javascript" src="data/provenienza_anno_sum.js"></script>
+<script type="text/javascript" src="data/paese-area.js"></script>
+<script type="text/javascript" src="scripts/treechart.js"></script>
+<script type="text/javascript" src="scripts/stackedchart.js"></script>
