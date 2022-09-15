@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Popolazione Residente</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#00009C" />
+    <meta
+      name="description"
+      content="Popolazione residente nei comuni del Camposampierese"
+    />
+    <meta property="og:title" content="Popolazione Residente" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://officinedigitali.fcc.veneto.it/PopolazioneResidente/"
+    />
+    <meta
+      property="og:image"
+      content="https://officinedigitali.fcc.veneto.it/PopolazioneResidente/logo512.png"
+    />
+    <meta
+      property="og:description"
+      content="Data Visualization riguardante la popolazione residente nei comuni del Camposampierese"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:site"
+      content="https://officinedigitali.fcc.veneto.it/PopolazioneResidente/"
+    />
+    <meta name="twitter:title" content="Dataviz popolazione residente" />
+    <meta
+      name="twitter:description"
+      content="Data Visualization popolazione residente nei comuni del Camposampierese"
+    />
+    <meta
+      name="twitter:image"
+      content="https://officinedigitali.fcc.veneto.it/PopolazioneResidente/logo512.png"
+    />
+    <link rel="stylesheet" href="style/styling.css" />
+  </head>
+
+  <body>
+    <div id="content">
+      <header>
+        <div class="first">
+          <div class="sections">
+            <div class="sections-display">
+              <div class="header-title">
+                <h2>Popolazione Residente</h2>
+              </div>
+            </div>
+            <img src="Union.svg" class="logo" />
+          </div>
+        </div>
+      </header>
+      <div class="wrapper">
+        <div class="viz-section1">
+          <div class="viz-section1-wrapper">
+            <h3>
+              Popolazione Residente nei comuni del Camposampierese dal 2002 al
+              2020
+            </h3>
+
+            <div id="buttons-container"></div>
+            <div id="stacked-container">
+              <h3>Popolazione totale</h3>
+
+              <div id="linechart-legend"></div>
+            </div>
+
+            <div class="legend-container">
+              <div
+                style="
+                  font-family: AtlasMedium;
+                  color: #00009c;
+                  margin-top: 32px;
+                  margin-right: 10px;
+                  margin-left: 8px;
+                "
+              >
+                Incremento demografico medio, 2002 - 2020
+              </div>
+              <div id="div-legend"></div>
+              <div
+                class="legenda"
+                style="font-family: AtlasMedium; margin-left: 22px"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="viz-section2">
+          <div id="viz-container">
+            <div class="ui-elements">
+              <button id="change-view-linechart">Aumento Percentuale</button>
+            </div>
+            <div id="svg-container"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="logos">
+        <img src="./footer/federazione-long.svg" />
+        <img src="./footer/officine.svg" />
+        <img src="./footer/por.svg" />
+        <img src="./footer/psc.svg" />
+      </div>
+    </div>
+    <div class="informativa">
+      <a
+        style="text-decoration: underline; font-family: Graphik"
+        href="informativa-popolazione.html"
+      />Informativa privacy
+    </div>
+  </body>
+</html>
+<script type="text/javascript" src="data/linechart-data.js"></script>
+<script type="text/javascript" src="data/dataResidentiWide.js"></script>
+<script type="text/javascript" src="libraries/d3.js"></script>
+<script type="text/javascript" src="scripts/linechart.js"></script>
+<script type="text/javascript" src="scripts/donutchart.js"></script>

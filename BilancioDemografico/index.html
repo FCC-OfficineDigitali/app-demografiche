@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bilancio Demografico</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#00009C" />
+    <meta
+      name="description"
+      content="Bilancio Demografico nei comuni del Camposampierese"
+    />
+    <meta property="og:title" content="Bilancio Demografico" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://officinedigitali.fcc.veneto.it/BilancioDemografico/"
+    />
+    <meta
+      property="og:image"
+      content="https://officinedigitali.fcc.veneto.it/BilancioDemografico/logo512.png"
+    />
+    <meta
+      property="og:description"
+      content="Data Visualization sul bilancio demografico nei comuni del Camposampierese"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:site"
+      content="https://officinedigitali.fcc.veneto.it/BilancioDemografico/"
+    />
+    <meta name="twitter:title" content="Dataviz Bilancio Demografico" />
+    <meta
+      name="twitter:description"
+      content="Data Visualization sul bilancio demografico nei comuni del Camposampierese"
+    />
+    <meta
+      name="twitter:image"
+      content="https://officinedigitali.fcc.veneto.it/BilancioDemografico/logo512.png"
+    />
+    <link rel="stylesheet" href="style/styling.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="sections">
+        <div class="header-title">
+          <h2>Bilancio Demografico</h2>
+        </div>
+        <img src="Union.svg" class="logo" />
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <div class="viz-section1">
+        <div class="viz-section1-wrapper">
+          <h3>
+            Bilancio nascite e decessi nella Federazione di comuni del
+            Camposampierese dal 2014 al 2020
+          </h3>
+          <!-- <p class="viz-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p> -->
+        </div>
+        <div class="legend-container">
+          <div
+            style="
+              font-family: AtlasMedium;
+              color: #00009c;
+              margin-left: 8px;
+              margin-top: 32px;
+              margin-right: 10px;
+            "
+          >
+            Nascite e Decessi totali nei comuni del Camposampierese, 2014 - 2020
+          </div>
+          <div id="div-legend"></div>
+          <div
+            class="legenda"
+            style="font-family: AtlasMedium; margin-left: 22px"
+          ></div>
+        </div>
+      </div>
+
+      <div class="viz-section2">
+        <div id="viz-container">
+          <div class="ui-elements">
+            <button id="change-view">Dettaglio Comune</button>
+            <select id="selectComune"></select>
+          </div>
+
+          <div id="svg-container"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="logos">
+      <img src="./footer/federazione-long.svg" />
+      <img src="./footer/officine.svg" />
+      <img src="./footer/por.svg" />
+      <img src="./footer/psc.svg" />
+    </div>
+    <div class="informativa">
+      <a
+        style="text-decoration: underline; font-family: Graphik"
+        href="informativa-bilancio.html"
+      />Informativa privacy
+    </div>
+  </body>
+</html>
+<script type="text/javascript" src="data/barcharts-data.js"></script>
+<script type="text/javascript" src="data/legendViz.js"></script>
+<script type="text/javascript" src="libraries/d3.js"></script>
+<script type="text/javascript" src="scripts/barchart.js"></script>
+<script type="text/javascript" src="scripts/rectchart.js"></script>
