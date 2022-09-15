@@ -1,12 +1,12 @@
 # Introduzione
 
-Bilancio Demografico è una web app caratterizzata dall’esplorazione - tramite Data Visualization - di alcuni aspetti socio demografici riguardanti i comuni appartenenti alla Federazione del Camposampierese. I dati rappresentati dai modelli visivi riguardano le nascite e i decessi nei dieci comuni della Federazione.
+Popolazione Residente è una webapp caratterizzata dall’esplorazione - tramite Data Visualization - di alcuni aspetti socio demografici riguardanti i comuni appartenenti alla Federazione del Camposampierese. I dati rappresentati dai modelli visivi riguardano l’andamento demografico nei dieci comuni della Federazione.
 
 # 1. Tipologia di webapp ed utilizzo
 
 Le webapp in questione è raggiungibile al seguente link:
 
-[https://officinedigitali.fcc.veneto.it/BilancioDemografico/](https://officinedigitali.fcc.veneto.it/BilancioDemografico/)
+[https://officinedigitali.fcc.veneto.it/PopolazioneResidente/](https://officinedigitali.fcc.veneto.it/BilancioDemografico/)
 
 Si presenta come classica pagina web, con possibilità di interazione da parte dell’utente al fine di esplorare il dataset analizzato orientandosi fra diverse viste di dettaglio.
 
@@ -16,7 +16,7 @@ La webapp di visualizzazione dati è stata realizzata tramite le classiche tecno
 
 # 3. Utilizzo in locale
 
-Per poter interagire e modificare localmente la piattaforma di visualizzazione dati **“Bilancio Demografico”** è necessario effettuare il download dell’intero contenuto della repository presente su github al seguente link:
+Per poter interagire e modificare localmente la piattaforma di visualizzazione dati **“Popolazione Residente”** è necessario effettuare il download dell’intero contenuto della repository presente su github al seguente link:
 
 [https://github.com/FCC-OfficineDigitali/app-demografiche](https://github.com/FCC-OfficineDigitali/app-demografiche)
 
