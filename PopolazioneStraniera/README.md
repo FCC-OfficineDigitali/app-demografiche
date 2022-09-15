@@ -39,4 +39,4 @@ Al fine di utilizzare quest’ultimo metodo è necessario che nel dispositivo si
 Lavoro sviluppato da Mattias Basso, Jacopo Trabona e Luca Zanardelli di Quantitas S.R.L. in collaborazione con Federazione dei Comuni del Camposampierese - Officine Digitali (ente attuatore del progetto).
 
 
-![Loghi](/credits.png)
+![Loghi](PopolazioneStraniera/credits.png)
