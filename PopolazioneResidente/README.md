@@ -6,7 +6,7 @@ Popolazione Residente è una webapp caratterizzata dall’esplorazione - tramite
 
 Le webapp in questione è raggiungibile al seguente link:
 
-[https://officinedigitali.fcc.veneto.it/PopolazioneResidente/](https://officinedigitali.fcc.veneto.it/BilancioDemografico/)
+[https://officinedigitali.fcc.veneto.it/PopolazioneResidente/](https://officinedigitali.fcc.veneto.it/PopolazioneResidente/)
 
 Si presenta come classica pagina web, con possibilità di interazione da parte dell’utente al fine di esplorare il dataset analizzato orientandosi fra diverse viste di dettaglio.
 
